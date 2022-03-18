@@ -8,39 +8,44 @@
     <title>Game-Logic</title>
   </head>
   <body>
-    <div class="app">
-      <div class="app__header">
-        <h1 id="time-header">Время игры: <span id="time">5.0</span></h1>
-        <h1 id="result-header" class="hide">
-          Ваш результат: <span id="result"></span>
-        </h1>
+    
+      <div class="manual">
+        <h1>Правила Игры:</h1>
+        <hr style="border: 2px solid red" />
+        <p id="manualText">
+          Выберите время игры в секундах. <br />
+          Нажмите кнопку Начать. <br />
+          За отведенное время как можно больше раз кликните по появляющемся
+          квадратам, которые могут появляется в разных местах и могут быть
+          разных размеров
+        </p>
       </div>
-      <div class="app__content">
-        <button class="btn" id="start">Начать</button>
 
-        <div class="game" id="game"></div>
-      </div>
-      <div class="app__footer">
-        <div class="input">
-          <label for="game-time">Время игры, (сек)</label>
-          <input type="number" id="game-time" min="5" step="1" value="5" />
-          <br />
+      <div class="app">
+        <div class="app__header">
+          <h1 id="time-header">Время игры: <span id="time">5.0</span></h1>
+          <h1 id="result-header" class="hide">
+            Ваш результат: <span id="result"></span>
+          </h1>
+        </div>
+        <div class="app__content">
+          <button class="btn" id="start">Начать</button>
+
+          <div class="game" id="game"></div>
+        </div>
+        <div class="app__footer">
+          <div class="input">
+            <label for="game-time">Время игры, (сек)</label>
+            <input type="number" id="game-time" min="5" step="1" value="5" />
+            <br />
+          </div>
         </div>
       </div>
-    </div>
+
     <div class="xcopy">
       <p id="copy">© Sergey Shamotenko, 2022</p>
     </div>
-<div class="manual">
-<h1>Правила Игры:</h1>
-<hr style="border: 2px solid red;">
-<p id="manualText">
-Выберите время игры в секундах. <br>
-Нажмите кнопку Начать. <br>
-За отведенное время как можно больше раз кликните по появляющемся квадратам, 
-которые могут появляется в разных местах и могут быть разных размеров
-</p>
-</div>
+
     <script src="script.js"></script>
   </body>
 </html>
